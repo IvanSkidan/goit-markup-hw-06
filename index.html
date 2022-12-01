@@ -492,6 +492,73 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form
+          action="#"
+          name="form-signup"
+          autocomplete="on"
+          class="modal-form"
+        >
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <div class="input-wrapper">
+            <label for="user-name" class="modal-label">Ім'я</label>
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+              class="modal-input"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="user-phone" class="modal-label">Телефон</label>
+            <input
+              type="tel"
+              name="user-phone"
+              id="user-phone"
+              required
+              class="modal-input"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="user-email" class="modal-label">Пошта</label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+              class="modal-input"
+            />
+          </div>
+
+          <label for="user-text" class="modal-label">Коментар</label>
+          <textarea
+            name="user-text"
+            id="user-text"
+            placeholder="Введіть текст"
+            cols="30"
+            rows="10"
+            class="modal-textarea"
+          ></textarea>
+
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            value="checkbox"
+            required
+            class="checkbox-input"
+          />
+          <label for="checkbox" class="checkbox-label"
+            >Погоджуюся з розсилкою та приймаю
+            <a href="" class="checkbox-link">Умови договору</a>
+          </label>
+
+          <button type="submit" class="modal-button">Відправити</button>
+        </form>
       </div>
     </div>
 
