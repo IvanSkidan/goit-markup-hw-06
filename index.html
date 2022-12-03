@@ -481,6 +481,26 @@
             </li>
           </ul>
         </div>
+
+        <!-- Підпишіться на розсилку -->
+        <div class="booking">
+          <h2 class="join-title">Підпишіться на розсилку</h2>
+          <form action="#" name="booking-form" class="booking-form">
+            <input
+              type="email"
+              name="booking-email"
+              placeholder="E-mail"
+              required
+              class="booking-input"
+            />
+            <button type="submit" class="booking-button">
+              <span class="booking-accent">Підписатися</span>
+              <svg class="booking-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -499,39 +519,54 @@
           autocomplete="on"
           class="modal-form"
         >
-          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
 
-          <div class="input-wrapper">
+          <div class="input-line">
             <label for="user-name" class="modal-label">Ім'я</label>
-            <input
-              type="text"
-              name="user-name"
-              id="user-name"
-              required
-              class="modal-input"
-            />
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+                class="modal-input"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="input-wrapper">
+          <div class="input-line">
             <label for="user-phone" class="modal-label">Телефон</label>
-            <input
-              type="tel"
-              name="user-phone"
-              id="user-phone"
-              required
-              class="modal-input"
-            />
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                required
+                class="modal-input"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
-          <div class="input-wrapper">
+          <div class="input-line">
             <label for="user-email" class="modal-label">Пошта</label>
-            <input
-              type="email"
-              name="user-email"
-              id="user-email"
-              required
-              class="modal-input"
-            />
+            <div class="input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                class="modal-input"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
           <label for="user-text" class="modal-label">Коментар</label>
@@ -544,18 +579,25 @@
             class="modal-textarea"
           ></textarea>
 
-          <input
-            type="checkbox"
-            name="checkbox"
-            id="checkbox"
-            value="checkbox"
-            required
-            class="checkbox-input"
-          />
-          <label for="checkbox" class="checkbox-label"
-            >Погоджуюся з розсилкою та приймаю
-            <a href="" class="checkbox-link">Умови договору</a>
-          </label>
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              value="checkbox"
+              required
+              class="checkbox-input visually-hidden"
+            />
+            <label for="checkbox" class="checkbox-label">
+              <span class="icon-wrapper">
+                <svg class="checkbox-icon" width="14" height="11">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="checkbox-link">Умови договору</a>
+            </label>
+          </div>
 
           <button type="submit" class="modal-button">Відправити</button>
         </form>
