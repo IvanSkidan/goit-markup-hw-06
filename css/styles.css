@@ -703,6 +703,16 @@ img {
     margin-left: auto;
 }
 
+.join-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
 .booking-form {
     display: flex;
 }
@@ -732,7 +742,8 @@ img {
 }
 
 .booking-input:focus {
-    outline: transparent;
+    outline: 1px solid var(--accent-color);
+    border: transparent;
 }
 
 .booking-button {
